@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+/* CSS RESET */
+*:root {
+  font-size: 18px;
+  --black: #151515;
+  --dark-grey: #242424;
+  --green: #4ee1a0;
+  --grey: #d9d9d9;
+  --white: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* ADDITIONAL STYLES */
+.heading-xl {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.14rem;
+  font-weight: 700;
+}
+
+.heading-l {
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+  letter-spacing: -0.08rem;
+  font-weight: 700;
+}
+
+.heading-m {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+
+.body-text-l {
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.75rem 0.5rem;
+}
+
+button {
+  background-color: inherit;
+  color: var(--white);
+  font-size: 0.889rem;
+  padding-bottom: 0.5em;
+  line-height: 1.4rem;
+  letter-spacing: 0.12rem;
+  border-style: none;
+  border-bottom: 0.1rem solid var(--green);
 }

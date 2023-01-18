@@ -1,0 +1,54 @@
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.header-img-container,
+.profile-img {
+  width: 10rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-img-container {
+  position: relative;
+  top: -5rem;
+  margin-bottom: -4.5rem;
+}
+
+.rings-img {
+  position: absolute;
+  height: 7rem;
+  top: 7rem;
+  left: -50%;
+}
+
+.circle-img {
+  position: absolute;
+  left: 12rem;
+  bottom: 0;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  line-height: 2.25rem;
+}
+
+.hero-text p {
+  font-size: 0.889rem;
+  color: var(--grey);
+}
+
+.hero-text span {
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  text-underline-position: under;
+}
