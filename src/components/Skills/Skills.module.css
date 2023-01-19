@@ -1,0 +1,27 @@
+#skills {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 1em;
+  margin-top: 4em;
+  border-top: 0.1rem solid var(--grey);
+  border-bottom: 0.1rem solid var(--grey);
+}
+#skills h2 {
+  font-size: 1.7rem;
+  line-height: 2.25rem;
+}
+
+#skills p {
+  font-size: 0.889rem;
+  color: var(--grey);
+}
+
+.rings-img {
+  position: absolute;
+  height: 6em;
+  bottom: -3em;
+  left: 50%;
+}
