@@ -37,6 +37,9 @@ video {
   display: block;
   max-width: 100%;
 }
+picture {
+  height: 100%;
+}
 
 input,
 textarea,
@@ -74,7 +77,6 @@ select {
 body {
   background-color: var(--black);
   color: var(--white);
-  padding: 0.75rem 0.5rem;
 }
 
 button {
@@ -86,4 +88,9 @@ button {
   letter-spacing: 0.12rem;
   border-style: none;
   border-bottom: 0.1rem solid var(--green);
+}
+
+.test-box {
+  height: 300px;
+  width: 100%;
 }

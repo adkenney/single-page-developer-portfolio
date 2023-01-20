@@ -1,0 +1,41 @@
+#projects {
+  margin-top: 3em;
+}
+
+.project-header,
+.project-wrapper,
+.project-card,
+.pl-description,
+.link-btns {
+  display: flex;
+}
+
+.project-header {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.project-header h1 {
+  font-size: 2.222rem;
+}
+
+.project-wrapper {
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.project-card {
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 0.5em;
+}
+
+.pl-description {
+  color: var(--grey);
+  gap: 1em;
+}
+
+.link-btns {
+  margin-top: 0.5em;
+  gap: 2em;
+}

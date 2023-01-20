@@ -1,19 +1,23 @@
 import React from 'react';
 import ProfileMobile from '../../assets/images/image-profile-mobile.webp';
+import ProfileTablet from '../../assets/images/image-profile-tablet.webp';
+import ProfileDesktop from '../../assets/images/image-profile-desktop.webp';
 import RingsImage from '../../assets/images/pattern-rings.svg';
 import CircleImage from '../../assets/images/pattern-circle.svg';
 import styles from '../Hero/Hero.module.css';
 
 const Hero = () => {
   return (
-    <section>
-      <img className={styles['rings-img']} src={RingsImage} alt="rings"></img>
+    <section id={styles['hero']}>
       <div className={styles['header-img-container']}>
+        <img className={styles['rings-img']} src={RingsImage} alt="rings"></img>
         <picture>
+          <source media="(min-width: 34em)" srcSet={ProfileDesktop} />
+          <source media="(min-width: 27em)" srcSet={ProfileTablet} />
           <img
             className={styles['profile-img']}
             src={ProfileMobile}
-            alt=""
+            alt="Profile"
           ></img>
         </picture>
         <img
