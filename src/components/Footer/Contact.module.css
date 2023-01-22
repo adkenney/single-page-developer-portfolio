@@ -1,0 +1,75 @@
+.footer {
+  position: relative;
+  background-color: var(--dark-grey);
+  margin-top: 4em;
+  padding: var(--mobile-padding);
+}
+
+.footer h2 {
+  font-size: 2.222rem;
+}
+
+.form-container,
+.contact-form,
+.footer-links,
+.footer-links > div {
+  display: flex;
+}
+
+.form-container {
+  flex-direction: column;
+  gap: 2em;
+}
+.form-header {
+  text-align: center;
+}
+.form-header p {
+  font-size: 0.889rem;
+  color: var(--grey);
+  margin-top: 0.75em;
+}
+.contact-form {
+  flex-direction: column;
+  gap: 1em;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--grey);
+  padding-bottom: 1em;
+  outline: none;
+  color: var(--white);
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  padding-left: 1em;
+}
+.contact-form textarea {
+  height: 6em;
+}
+.contact-form div:last-child {
+  align-self: flex-end;
+}
+.footer-links,
+.footer-links > div {
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.footer-links {
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.footer-links > div {
+  gap: 1.5em;
+}
+
+.rings-img {
+  position: absolute;
+  top: 57%;
+  left: -50%;
+  height: 6.5em;
+}
