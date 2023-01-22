@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
   gap: 2em;
-  padding: 2em 1em;
+  padding: var(--mobile-padding);
   border-top: 0.1rem solid var(--grey);
   border-bottom: 0.1rem solid var(--grey);
 }
@@ -28,7 +28,8 @@
 
 .rings-img {
   position: absolute;
-  height: 6em;
+  height: 7em;
+  width: 29.4em;
   bottom: -3em;
   left: 50%;
 }

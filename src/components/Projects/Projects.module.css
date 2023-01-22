@@ -1,5 +1,6 @@
 #projects {
   margin-top: 3em;
+  padding: var(--mobile-padding);
 }
 
 .project-header,
@@ -15,7 +16,7 @@
   flex-wrap: wrap;
   margin-bottom: 2em;
 }
-.project-header h1 {
+.project-header h2 {
   font-size: 2.222rem;
 }
 
