@@ -5,6 +5,7 @@ import { projectData } from '../../assets/data/projects';
 const Projects = () => {
   return (
     <section id={styles['projects']}>
+      <div className="border"></div>
       <div className={styles['project-header']}>
         <h2 className="heading-l">Projects</h2>
         <button>CONTACT ME</button>
@@ -15,7 +16,7 @@ const Projects = () => {
             <div key={project.id} className={styles['project-card']}>
               <picture>
                 <source
-                  media="(min-width: 34em)"
+                  media="(min-width: 62em)"
                   srcSet={project.image.desktop}
                 ></source>
                 <img src={project.image.mobile} alt=""></img>

@@ -5,6 +5,7 @@ import styles from '../Skills/Skills.module.css';
 const Skills = () => {
   return (
     <section id={styles['skills']}>
+      <div className="border"></div>
       <div className={styles['skill-content']}>
         <div>
           <h2 className="heading-l">HTML</h2>

@@ -8,7 +8,7 @@ import styles from '../Footer/Contact.module.css';
 
 const Contact = () => {
   return (
-    <footer className={styles['footer']}>
+    <footer id={styles['footer']}>
       <img className={styles['rings-img']} src={RingsImage} alt="rings"></img>
       <section className={styles['form-container']}>
         <div className={styles['form-header']}>
@@ -33,8 +33,9 @@ const Contact = () => {
           </div>
         </form>
       </section>
+      <div className="border"></div>
       <div className={styles['footer-links']}>
-        <h1 className="heading-m">adamkeyes</h1>
+        <h2 className="heading-m">adamkeyes</h2>
         <div>
           <a href="https://www.github.com">
             <GithubLogo />

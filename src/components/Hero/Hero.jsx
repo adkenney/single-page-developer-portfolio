@@ -9,11 +9,11 @@ import styles from '../Hero/Hero.module.css';
 const Hero = () => {
   return (
     <section id={styles['hero']}>
+      <img className={styles['rings-img']} src={RingsImage} alt="rings"></img>
       <div className={styles['header-img-container']}>
-        <img className={styles['rings-img']} src={RingsImage} alt="rings"></img>
         <picture>
-          <source media="(min-width: 34em)" srcSet={ProfileDesktop} />
-          <source media="(min-width: 27em)" srcSet={ProfileTablet} />
+          <source media="(min-width: 62em)" srcSet={ProfileDesktop} />
+          <source media="(min-width: 48em)" srcSet={ProfileTablet} />
           <img
             className={styles['profile-img']}
             src={ProfileMobile}
@@ -28,10 +28,11 @@ const Hero = () => {
       </div>
       <div className={styles['hero-text']}>
         <h1 className="heading-l">
-          Nice to meet you! I'm <span>Adam Keyes</span>.
+          <span className={styles['break']}>Nice to</span> meet you! I'm{' '}
+          <span className={styles['name-decoration']}>Adam Keyes</span>.
         </h1>
         <p className="body-text-l">
-          Based in th UK, I'm a front-end developer passionate about building
+          Based in the UK, I'm a front-end developer passionate about building
           accessible web apps that users love.
         </p>
       </div>

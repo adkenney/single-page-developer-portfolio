@@ -1,11 +1,11 @@
-.footer {
+#footer {
   position: relative;
   background-color: var(--dark-grey);
   margin-top: 4em;
   padding: var(--mobile-padding);
 }
 
-.footer h2 {
+#footer h2 {
   font-size: 2.222rem;
 }
 
@@ -18,7 +18,7 @@
 
 .form-container {
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 .form-header {
   text-align: center;
@@ -26,11 +26,12 @@
 .form-header p {
   font-size: 0.889rem;
   color: var(--grey);
-  margin-top: 0.75em;
+  margin-top: 1.5em;
+  overflow-wrap: break-word;
 }
 .contact-form {
   flex-direction: column;
-  gap: 1em;
+  gap: 2.5em;
 }
 .contact-form input,
 .contact-form textarea {
@@ -60,7 +61,11 @@
 }
 .footer-links {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: -1em;
+}
+
+.footer-links h2 {
+  font-size: 1.333rem !important;
 }
 
 .footer-links > div {
@@ -71,5 +76,38 @@
   position: absolute;
   top: 57%;
   left: -50%;
-  height: 6.5em;
+  height: 7.116em;
+}
+
+@media screen and (min-width: 48em) {
+  #footer {
+    padding: var(--tablet-padding);
+  }
+
+  #footer h2 {
+    font-size: 4rem;
+  }
+
+  #footer p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links h2 {
+    font-size: 1.788rem !important;
+  }
+
+  .form-container {
+    width: 65%;
+    margin: 0 auto 5em;
+  }
+
+  .rings-img {
+    top: 32em;
+    left: -18em;
+  }
 }

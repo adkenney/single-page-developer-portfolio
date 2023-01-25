@@ -1,14 +1,7 @@
 #skills {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
   gap: 2em;
   padding: var(--mobile-padding);
-  border-top: 0.1rem solid var(--grey);
-  border-bottom: 0.1rem solid var(--grey);
 }
 #skills h2 {
   font-size: 1.778rem;
@@ -21,15 +14,43 @@
 }
 
 .skill-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1em;
+  text-align: center;
 }
 
 .rings-img {
   position: absolute;
   height: 7em;
   width: 29.4em;
-  bottom: -3em;
+  bottom: -4em;
   left: 50%;
+}
+
+@media screen and (min-width: 48em) {
+  #skills {
+    padding: var(--tablet-padding);
+  }
+
+  #skills h2 {
+    font-size: 2.667rem;
+    line-height: 3.1rem;
+    margin-bottom: 0.25em;
+  }
+
+  #skills p {
+    font-size: 1rem;
+    line-height: 1.556rem;
+  }
+
+  .skill-content {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+    gap: 3em;
+  }
+
+  .rings-img {
+    bottom: 0;
+    left: 33.5em;
+  }
 }

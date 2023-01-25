@@ -1,6 +1,8 @@
 #hero {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 .profile-img {
@@ -18,15 +20,15 @@
 
 .rings-img {
   position: absolute;
-  height: 6em;
-  width: 29.4em;
+  width: 29.444em;
   top: 7rem;
-  left: -50%;
+  left: -10em;
 }
 
 .circle-img {
   position: absolute;
-  right: -15%;
+  width: 7.167em;
+  right: -3em;
   bottom: 0;
 }
 
@@ -40,6 +42,7 @@
 .hero-text h1 {
   font-size: 2.2rem;
   line-height: 2.25rem;
+  overflow-wrap: break-word;
 }
 
 .hero-text p {
@@ -47,8 +50,56 @@
   color: var(--grey);
 }
 
-.hero-text span {
+.name-decoration {
   text-decoration: underline;
   text-decoration-color: var(--green);
   text-underline-position: under;
+}
+
+@media screen and (min-width: 48em) {
+  #hero {
+    justify-content: flex-end;
+    height: 33em;
+    padding: 0 1.75em;
+    text-align: left;
+  }
+  .header-img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18.4em;
+    height: 33em;
+    z-index: -1;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+
+  .hero-text {
+    gap: 2em;
+    padding: 0;
+    width: 25em;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.114rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 2em;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .rings-img {
+    top: 5em;
+    left: -16.5em;
+  }
 }
