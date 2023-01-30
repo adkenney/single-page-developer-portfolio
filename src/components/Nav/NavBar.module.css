@@ -33,3 +33,9 @@ nav {
     font-size: 1.778rem !important;
   }
 }
+
+@media screen and (min-width: 62em) {
+  nav {
+    padding: 0 9em;
+  }
+}

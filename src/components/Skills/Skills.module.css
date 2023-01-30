@@ -54,3 +54,17 @@
     left: 33.5em;
   }
 }
+
+@media screen and (min-width: 62em) {
+  #skills {
+    padding: var(--desktop-padding);
+  }
+
+  .skill-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rings-img {
+    left: 64.5em;
+  }
+}

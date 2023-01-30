@@ -8,19 +8,29 @@ const Projects = () => {
       <div className="border"></div>
       <div className={styles['project-header']}>
         <h2 className="heading-l">Projects</h2>
-        <button>CONTACT ME</button>
+        <a className="button">Contact Me</a>
       </div>
       <div className={styles['project-wrapper']}>
         {projectData.map(project => {
           return (
             <div key={project.id} className={styles['project-card']}>
-              <picture>
-                <source
-                  media="(min-width: 62em)"
-                  srcSet={project.image.desktop}
-                ></source>
-                <img src={project.image.mobile} alt=""></img>
-              </picture>
+              <div className={styles['project-img']}>
+                <picture>
+                  <source
+                    media="(min-width: 62em)"
+                    srcSet={project.image.desktop}
+                  ></source>
+                  <img src={project.image.mobile} alt=""></img>
+                </picture>
+                <div className={styles['img-link-btns']}>
+                  <div>
+                    <a href="https://frontendmentor.io">View Project</a>
+                  </div>
+                  <div>
+                    <a href="https://github.com">View Code</a>
+                  </div>
+                </div>
+              </div>
               <h3 className="heading-m">{project.projectTitle}</h3>
               <div className={styles['pl-description']}>
                 {project.skills.map((skill, index) => {
@@ -33,10 +43,14 @@ const Projects = () => {
               </div>
               <div className={styles['link-btns']}>
                 <div>
-                  <button>VIEW PROJECT</button>
+                  <a className="button" href="#">
+                    View Project
+                  </a>
                 </div>
                 <div>
-                  <button>VIEW CODE</button>
+                  <a className="button" href="#">
+                    View Code
+                  </a>
                 </div>
               </div>
             </div>

@@ -29,7 +29,9 @@ const Contact = () => {
             <textarea placeholder="MESSAGE" name="message"></textarea>
           </div>
           <div>
-            <button type="submit">send message</button>
+            <button className="button" type="submit">
+              send message
+            </button>
           </div>
         </form>
       </section>

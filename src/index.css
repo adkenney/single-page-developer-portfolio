@@ -9,6 +9,7 @@
   --white: #ffffff;
   --mobile-padding: 1em 0.75em;
   --tablet-padding: 3em 1.75em;
+  --desktop-padding: 3.5em 8em;
 }
 
 *,
@@ -28,8 +29,11 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 img,
@@ -85,7 +89,7 @@ body {
   color: var(--white);
 }
 
-button {
+.button {
   background-color: inherit;
   color: var(--white);
   font-size: 0.889rem;
@@ -95,6 +99,10 @@ button {
   letter-spacing: 0.12rem;
   border-style: none;
   border-bottom: 0.1rem solid var(--green);
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--green);
 }
 
 .test-box {

@@ -1,4 +1,5 @@
 #hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -6,7 +7,6 @@
 }
 
 .profile-img {
-  position: relative;
   width: 9.667rem;
   height: 100%;
   margin: 0 auto;
@@ -67,7 +67,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 18.4em;
+    width: 20em;
     height: 33em;
     z-index: -1;
   }
@@ -101,5 +101,41 @@
   .rings-img {
     top: 5em;
     left: -16.5em;
+  }
+}
+@media screen and (min-width: 62em) {
+  #hero {
+    position: relative;
+    justify-content: center;
+    max-width: 70em;
+    padding: var(--desktop-padding);
+  }
+
+  #hero h1 {
+    font-size: 4.889rem;
+    line-height: 4.889rem;
+  }
+
+  .header-img-container {
+    position: absolute;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .hero-text {
+    width: 40em;
+  }
+
+  .hero-text p {
+    width: 23em;
+  }
+
+  .circle-img {
+    left: -3.5em;
+    right: auto;
+    bottom: 3em;
+  }
+  .break {
+    display: inline-block;
   }
 }
