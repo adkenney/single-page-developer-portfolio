@@ -34,23 +34,38 @@
   flex-direction: column;
   gap: 2.5em;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid var(--grey);
-  padding-bottom: 1em;
+  padding: 0 0 1em 1em;
   outline: none;
   color: var(--white);
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  padding-left: 1em;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid var(--green);
 }
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: var(--white);
+}
+
 .contact-form textarea {
   height: 6em;
 }
+
+.error {
+  font-size: 0.899rem;
+  color: var(--error-red);
+  text-align: end;
+  padding-top: 0.125em;
+}
+
 .contact-form div:last-child {
   align-self: flex-end;
 }
@@ -103,16 +118,11 @@
   }
 
   .form-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10em;
-  }
-
-  .form-header {
-    text-align: left;
+    padding: 0 8em;
   }
 
   .rings-img {
-    top: 32em;
+    top: 37em;
     left: -18em;
   }
 }
@@ -120,6 +130,15 @@
 @media screen and (min-width: 62em) {
   #footer {
     padding: var(--desktop-padding);
+  }
+
+  .form-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 10em;
+  }
+  .form-header {
+    text-align: left;
   }
 
   .rings-img {

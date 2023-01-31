@@ -1,4 +1,3 @@
-import './App.css';
 import Contact from './components/Footer/Contact';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/Nav/NavBar';

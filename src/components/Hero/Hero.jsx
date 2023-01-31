@@ -36,9 +36,7 @@ const Hero = () => {
           accessible web apps that users love.
         </p>
         <div>
-          <a className="button" href="#">
-            Contact Me
-          </a>
+          <button className="button">Contact Me</button>
         </div>
       </div>
     </section>
