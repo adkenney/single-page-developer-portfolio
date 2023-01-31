@@ -43,12 +43,12 @@ const Projects = () => {
               </div>
               <div className={styles['link-btns']}>
                 <div>
-                  <a className="button" href="#">
+                  <a className="button" href="https://www.frontendmentor.io">
                     View Project
                   </a>
                 </div>
                 <div>
-                  <a className="button" href="#">
+                  <a className="button" href="https://www.github.com">
                     View Code
                   </a>
                 </div>
