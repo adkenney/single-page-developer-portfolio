@@ -8,7 +8,9 @@ const Projects = () => {
       <div className="border"></div>
       <div className={styles['project-header']}>
         <h2 className="heading-l">Projects</h2>
-        <a className="button">Contact Me</a>
+        <button className="button" href="">
+          Contact Me
+        </button>
       </div>
       <div className={styles['project-wrapper']}>
         {projectData.map(project => {
